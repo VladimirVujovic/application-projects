@@ -2,6 +2,7 @@ import React from 'react';
 import usersData from './usersData';
 import UserListItem from './UserListItem';
 import UserListItem2 from './UserListItem2';
+//const ChangeFeed=()=>()
 const UserFeed = () => (
   <div className="container">
     {usersData.map ((userData, i) => (

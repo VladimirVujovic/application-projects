@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'p';
 const Footer = props => {
   return (
     <div className="App-header">
