@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import usersData from './app/usersData';
-import UserListItem from './app/UserListItem';
+// import UserListItem from './app/UserListItem';
 import UserFeed from '../src/app/UserFeed';
 import Footer from '../src/app/footer';
 
