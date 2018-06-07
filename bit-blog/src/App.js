@@ -12,7 +12,9 @@ class App extends Component {
       <div>
         <Header />
         <Switch>
+
           <Route exact path="/" component={HomePages} />
+
           <Route path="/post" component={PostTitle} />
         </Switch>
         <Footer />
