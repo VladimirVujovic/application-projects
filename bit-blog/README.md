@@ -15,9 +15,3 @@
 
 
      -->
-
-     src/
-     app/
-     home/
-     single_post/
-     authors/
