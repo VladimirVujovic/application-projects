@@ -1,7 +1,7 @@
 import React from 'react';
 
 const UserListItem2 = data => (
-  <div className="card col-3 divOne">
+  <div className="col-3 card divOne">
     <img
       className="card-img-top picture"
       src={data.userData.picture.large}
@@ -10,7 +10,7 @@ const UserListItem2 = data => (
     <div className="card-body divThree">
       <p className="card-text">
         <p>{data.userData.email}</p>
-        <p>Date of birth: {data.userData.dob}</p>
+        <p>Birth of date: {data.userData.dob.slice (0, 10)}</p>
 
       </p>
     </div>
