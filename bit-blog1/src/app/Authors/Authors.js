@@ -1,4 +1,6 @@
 import React from 'react';
+import UsersService from '../services/UsersService';
+import AuthorInformation from '../Authors/AuthorInformation';
 class Authors extends React.Component {
   constructor (props) {
     super (props);
@@ -8,7 +10,7 @@ class Authors extends React.Component {
   }
 
   componentDidMount () {
-    PostService.getUsers ().then (users => {
+    UsersService.getUsers ().then (users => {
       this.setState ({users: users});
     });
   }
