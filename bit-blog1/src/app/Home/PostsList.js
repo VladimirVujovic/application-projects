@@ -3,7 +3,14 @@ import PostItem from './PostItem';
 
 const PostsList = props => {
   return props.posts.map (post => {
-    return <PostItem title={post.title} body={post.body} key={post.postId} />;
+    return (
+      <PostItem
+        title={post.title}
+        body={post.body}
+        id={post.id}
+        key={post.userId}
+      />
+    );
   });
 };
 export default PostsList;

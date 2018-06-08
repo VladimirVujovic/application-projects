@@ -3,8 +3,10 @@ import './App.css';
 import Header from './app/partials/Header';
 import Footer from './app/partials/Footer';
 import HomePages from './app/Home/HomePages';
-import PostTitle from './app/HomeSinglePost/PostTitle';
+import SinglePostTitle from './app/HomeSinglePost/SinglePostTitle';
 import {Switch, Route} from 'react-router-dom';
+import Authors from './app/Authors/Authors';
+import Users from './app/entities/Users';
 class App extends Component {
   render () {
     return (
@@ -12,7 +14,8 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path="/" component={HomePages} />
-          <Route path="/post" component={PostTitle} />
+          <Route path="/post/:id" component={SinglePostTitle} />
+          <Route path="/Authors" component={Authors} />
         </Switch>
         <Footer />
       </div>

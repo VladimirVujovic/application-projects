@@ -10,7 +10,7 @@ class HomePages extends React.Component {
   }
 
   componentDidMount () {
-    PostService.getPost ().then (posts => {
+    PostService.getPosts ().then (posts => {
       this.setState ({posts: posts});
     });
   }
