@@ -1,5 +1,4 @@
 import React from 'react';
-import morePosts from './MorePosts';
 import MorePosts from './MorePosts';
 class PostTitle extends React.Component {
   render () {
