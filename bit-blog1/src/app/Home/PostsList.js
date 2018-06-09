@@ -8,6 +8,7 @@ const PostsList = props => {
         title={post.title}
         body={post.body}
         id={post.id}
+        userId={post.id}
         key={post.userId}
       />
     );

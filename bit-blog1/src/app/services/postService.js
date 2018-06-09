@@ -1,21 +1,32 @@
 import {postUrl} from '../shared/constants';
 import Post from '../entities/Post';
+
 class PostService {
   getPosts = () => {
-    return fetch (postUrl + 'posts')
-      .then (response => response.json ())
-      .then (data => {
-        return data.map (post => {
-          return new Post (post.id, post.userId, post.title, post.body);
-        });
+    let url = `${postUrl}posts`;
+
+    return fetch (url).then (response => response.json ()).then (data => {
+      return data.map (post => {
+        return new Post (post.id, post.userId, post.title, post.body);
       });
+    });
+  };
+
+  getUserPosts = userId => {
+    let url = `${postUrl}posts?userId=${userId}`;
+
+    return fetch (url).then (response => response.json ()).then (posts => {
+      return posts.map (post => {
+        return new Post (post.id, post.userId, post.title, post.body);
+      });
+    });
   };
 
   getPost = id => {
     return fetch (postUrl + 'posts/' + id)
       .then (response => response.json ())
-      .then (data => {
-        return new Post (data.id, data.userId, data.title, data.body);
+      .then (post => {
+        return new Post (post.id, post.userId, post.title, post.body);
       });
   };
 }

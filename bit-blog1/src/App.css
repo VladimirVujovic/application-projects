@@ -33,7 +33,30 @@
 h1 {
   text-align: center;
 }
-
+.authors {
+  text-align: center;
+}
+.About {
+  text-align: center;
+  margin-top: 85px;
+  margin-bottom: 120px;
+  padding: 0px 120px;
+}
+.header {
+  background-color: bisque;
+}
+.links {
+  display: block;
+  padding: 5px;
+}
+.authorTitle {
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+.post {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

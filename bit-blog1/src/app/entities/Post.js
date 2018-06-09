@@ -1,5 +1,5 @@
 class Post {
-  constructor (userId, id, title, body) {
+  constructor (id, userId, title, body) {
     this.id = id;
     this.userId = userId;
     this.title = title;
