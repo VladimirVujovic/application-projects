@@ -18,7 +18,7 @@ class HomePages extends React.Component {
   render () {
     return (
       <div className="container">
-        <h1>POSTS</h1>
+        <h2>POSTS</h2>
         <PostsList posts={this.state.posts} />
       </div>
     );

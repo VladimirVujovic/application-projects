@@ -1,5 +1,5 @@
 import React from 'react';
-import UsersService from '../services/UsersService';
+import UsersService from '../../app/services/usersService';
 import AuthorsLink from './AuthorsLink';
 class Authors extends React.Component {
   constructor (props) {
@@ -18,11 +18,12 @@ class Authors extends React.Component {
   render () {
     return (
       <div className="container">
-        <div className="titleBlog col-8 offset-4">
+        <div className="col-12 links">
           <h2>Authors (6)</h2>
-
-        </div>
+          <div className>
         <AuthorsLink users={this.state.users} />
+     </div>
+        </div>
       </div>
     );
   }
