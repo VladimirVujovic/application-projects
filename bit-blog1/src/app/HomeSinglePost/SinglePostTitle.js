@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import PostService from '../services/postService';
+import UsersService from '../services/UsersService';
 
 class SinglePostTitle extends React.Component {
   constructor (props) {
@@ -8,9 +9,14 @@ class SinglePostTitle extends React.Component {
     this.state = {
       post: {},
       userPosts: [],
+      users: [],
     };
   }
-
+  componentDidMount () {
+    UsersService.getUsers ().then (users => {
+      this.setState ({users: users});
+    });
+  }
   componentWillReceiveProps = nextProps => {
     const postId = nextProps.match.params.id;
 
@@ -38,6 +44,9 @@ class SinglePostTitle extends React.Component {
   render () {
     return (
       <div className="container authorTitle">
+        <Link to={`/users/${this.state.users.userId}`}>
+          {this.state.users.name}
+        </Link>
         <h1>{this.state.post.title}</h1>
         <p className="post">{this.state.post.body}</p>
 

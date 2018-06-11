@@ -7,6 +7,7 @@ import SinglePostTitle from './app/HomeSinglePost/SinglePostTitle';
 import {Switch, Route} from 'react-router-dom';
 import Authors from './app/Authors/Authors';
 import About from './app/About/About';
+import AuthorsInfo from './app/AuthorsInfo/AuthorsInfo';
 
 class App extends Component {
   render () {
@@ -18,6 +19,7 @@ class App extends Component {
           <Route path="/post/:id" component={SinglePostTitle} />
           <Route path="/Authors" component={Authors} />
           <Route path="/About" component={About} />
+          <Route path="/users/:id" component={AuthorsInfo} />
         </Switch>
         <Footer />
       </div>

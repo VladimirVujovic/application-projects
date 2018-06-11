@@ -19,10 +19,10 @@ class Authors extends React.Component {
     return (
       <div className="container">
         <div className="col-12 links">
-          <h2>Authors (6)</h2>
-          <div className>
-        <AuthorsLink users={this.state.users} />
-     </div>
+          <h2>Authors ({this.state.users.length})</h2>
+          <div className="linksList">
+            <AuthorsLink users={this.state.users} />
+          </div>
         </div>
       </div>
     );

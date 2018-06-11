@@ -4,7 +4,7 @@ const AuthorsLink = props => {
   return props.users.map (user => {
     return (
       <div className="titleBlog col-8 offset-2 authorsList">
-        <h4><Link to={'/'} key={user.id}>{user.name}</Link></h4>
+        <h4><Link to={`/users/${user.id}`} key={user.id}>{user.name}</Link></h4>
       </div>
     );
   });
