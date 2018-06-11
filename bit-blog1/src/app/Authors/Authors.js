@@ -1,5 +1,5 @@
 import React from 'react';
-import UsersService from '../../app/services/usersService';
+import UsersService from '../../app/services/UsersService';
 import AuthorsLink from './AuthorsLink';
 class Authors extends React.Component {
   constructor (props) {
