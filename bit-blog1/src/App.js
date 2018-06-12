@@ -1,16 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Header from './app/partials/Header';
 import Footer from './app/partials/Footer';
 import HomePages from './app/Home/HomePages';
 import SinglePostTitle from './app/HomeSinglePost/SinglePostTitle';
-import {Switch, Route} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Authors from './app/Authors/Authors';
 import About from './app/About/About';
 import AuthorsInfo from './app/AuthorsInfo/AuthorsInfo';
 
 class App extends Component {
-  render () {
+  render() {
     return (
       <div>
         <Header />
